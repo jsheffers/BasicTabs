@@ -1,4 +1,4 @@
 BasicTabs
 =========
 
-Basic tab implementation in jQuery.  Used for bottom level tab needs.
+This is a barebones version of a jQuery tabs implementation that can be used in projects, or simply used as a learning device.
