@@ -18,10 +18,12 @@ h2 {
 	font-weight: normal;
 }
 
+#wrap { width: 75%; margin: 0 auto;}
+
 #tabwrap { 
 	background: #fff; 
 	overflow: hidden; 
-	width: 600px;
+	width: 100%;
 	min-height: 300px;
 	margin: 60px auto;
 	box-shadow: 0 0 20px #ddd;
