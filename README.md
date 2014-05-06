@@ -7,6 +7,10 @@ Animations
 ----
 Animations are derived from Dan Edens Animate.css which you can find here: https://github.com/daneden/animate.css
 
+```
+var animation = "fadeIn";  // Change this to any animate.css class name
+```
+
 Demo
 ----
 
