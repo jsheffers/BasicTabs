@@ -1,7 +1,7 @@
 BasicTabs
 =========
 
-BasicTabs is a simple script to get tabs up and running in no time at all.  The source has an extremely light footprint and can be used added into any project seemlessly.
+BasicTabs is a simple script to get tabs up and running in no time at all.  The source has an extremely light footprint and can be added into any project seemlessly.
 
 Animations
 ----
