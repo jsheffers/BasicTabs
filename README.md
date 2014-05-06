@@ -1,7 +1,11 @@
 BasicTabs
 =========
 
-This is a barebones version of a responsive, animated, jQuery tabs implementation that can be used in projects, or simply used as a learning device.  Animations are derived from Dan Edens Animate.css which you can find here: https://github.com/daneden/animate.css
+BasicTabs is a simple script to get tabs up and running in no time at all.  The source has an extremely light footprint and can be used added into any project seemlessly.
+
+Animations
+----
+Animations are derived from Dan Edens Animate.css which you can find here: https://github.com/daneden/animate.css
 
 Demo
 ----
