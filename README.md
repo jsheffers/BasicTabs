@@ -20,6 +20,34 @@ $('.container').basicTabs({
 });
 ```
 
+## HTML Structure ##
+
+```
+<div class="container">
+  <ul class="tabs">
+    <li><a href="#tab1">Tab 1</a></li>
+    <li><a href="#tab2">Tab 2</a></li>
+    <li><a href="#tab3">Tab 3</a></li>
+    <li><a href="#tab4">Tab 4</a></li>
+  </ul>
+  <div class="tab_content">
+    <div id="tab1">
+      <p>Tab Content</p>
+    </div>
+    <div id="tab2">
+      <p>Tab Content</p>
+    </div>
+    <div id="tab3">
+      <p>Tab Content</p>
+    </div>
+    <div id="tab4">
+      <p>Tab Content</p>
+    </div>
+  </div>
+</div>
+
+```
+
 
 Demo
 ----
