@@ -5,8 +5,19 @@ BasicTabs is a simple script to get tabs up and running in no time at all.  The 
 
 
 ## Basic Usage ##
+
+First add the javascript file to your page after your jQuery call.
+
 ```
-$('.container').basicTabs();
+<script src="js/basicTabs-min.js"></script>
+```
+
+Then use the following jQuery snippet to initiate the tab magic.
+
+```
+$(document).ready(function(){
+  $('.container').basicTabs();
+});
 ```
 
 ## Options ##
