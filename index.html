@@ -3,17 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-	<script src="js/script.js"></script>
+	<script src="js/basicTabs-min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/animate.css">
 	<title>Basic jQuery Tabs</title>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#tabwrap').basicTabs();
+	});
+	</script>
 </head>
 <body>
 <div id="wrap">
 	<h1>Basic jQuery Tabs</h1>
 	<h2>Tabs for Dummies</h2>
 	<div id="tabwrap">
-
 		<ul class="tabs">
 			<li class="current"><a href="#home">Home</a></li>
 			<li><a href="#about">About</a></li>
@@ -21,19 +24,19 @@
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 		<div class="tab_content">
-			<div id="home" class="current animated">
+			<div id="home" class="current">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsam delectus adipisci culpa praesentium libero beatae maiores explicabo perspiciatis ad. Excepturi sapiente debitis odit quibusdam ullam rerum reprehenderit! Ratione similique.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsam delectus adipisci culpa praesentium libero beatae maiores explicabo perspiciatis ad. Excepturi sapiente debitis odit quibusdam ullam rerum reprehenderit! Ratione similique.</p>
 			</div>
-			<div id="about" class="animated">
+			<div id="about">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam dolores maxime qui molestias id dignissimos incidunt sit rerum. Expedita voluptas provident dolorum dolore non impedit minima eaque consequatur velit neque!</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsam delectus adipisci culpa praesentium libero beatae maiores explicabo perspiciatis ad. Excepturi sapiente debitis odit quibusdam ullam rerum reprehenderit! Ratione similique.</p>
 			</div>
-			<div id="services" class="animated">
+			<div id="services">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quisquam blanditiis recusandae nulla consectetur consequuntur itaque odio vero architecto quod dolore magni inventore reprehenderit quos cum. Non assumenda aspernatur modi!</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsam delectus adipisci culpa praesentium libero beatae maiores explicabo perspiciatis ad. Excepturi sapiente debitis odit quibusdam ullam rerum reprehenderit! Ratione similique.</p>
 			</div>
-			<div id="contact" class="animated">
+			<div id="contact">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut expedita maxime ad nihil labore sapiente dolore architecto quam doloremque iste enim eaque eius error maiores at velit rem doloribus perspiciatis!</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsam delectus adipisci culpa praesentium libero beatae maiores explicabo perspiciatis ad. Excepturi sapiente debitis odit quibusdam ullam rerum reprehenderit! Ratione similique.</p>
 			</div>
