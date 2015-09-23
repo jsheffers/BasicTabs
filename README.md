@@ -1,7 +1,7 @@
 BasicTabs
 =========
 
-BasicTabs is a simple script to get tabs up and running in no time at all.  The source has an extremely light footprint and can be added into any project seemlessly.
+BasicTabs is a simple script to get tabs up and running in no time at all.  The source has an extremely light footprint and can be added into any project seamlessly.
 
 
 ## Basic Usage ##
@@ -16,17 +16,17 @@ Then use the following jQuery snippet to initiate the tab magic.
 
 ```
 $(document).ready(function(){
-  $('.container').basicTabs();
+  $('.c-tabs').basicTabs();
 });
 ```
 
 ## Options ##
 
 ```
-$('.container').basicTabs({
+$('.c-tabs').basicTabs({
   active_class: "current",
   list_class: "tabs",
-  content_class: 'tab_content',
+  open_class: "is-open"
   starting_tab: 1
 });
 ```
@@ -34,28 +34,26 @@ $('.container').basicTabs({
 ## HTML Structure ##
 
 ```
-<div class="container">
-  <ul class="tabs">
-    <li><a href="#tab1">Tab 1</a></li>
-    <li><a href="#tab2">Tab 2</a></li>
-    <li><a href="#tab3">Tab 3</a></li>
-    <li><a href="#tab4">Tab 4</a></li>
-  </ul>
-  <div class="tab_content">
-    <div id="tab1">
-      <p>Tab Content</p>
+<ul class="c-tabs">
+  <li class="c-tabs__item">
+    <a href="javascript:void(0)">Tab 1</a>
+    <div class="c-tabs__content">
+      <p>Content goes here.</p>
     </div>
-    <div id="tab2">
-      <p>Tab Content</p>
+  </li>
+  <li class="c-tabs__item">
+    <a href="javascript:void(0)">Tab 2</a>
+    <div class="c-tabs__content">
+      <p>Content goes here.</p>
     </div>
-    <div id="tab3">
-      <p>Tab Content</p>
+  </li>
+  <li class="c-tabs__item">
+    <a href="javascript:void(0)">Tab 3</a>
+    <div class="c-tabs__content">
+      <p>Content goes here.</p>
     </div>
-    <div id="tab4">
-      <p>Tab Content</p>
-    </div>
-  </div>
-</div>
+  </li>
+</ul>
 
 ```
 

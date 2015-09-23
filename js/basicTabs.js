@@ -1,24 +1,27 @@
 (function( $ ) {
   $.fn.basicTabs = function(options){
     var settings = $.extend({
-      active_class: "current",
-      list_class: "tabs",
-      content_class: "tab_content",
+      active_class: "is-active",
+      open_class: "is-open",
+      list_class: "c-tabs",
       starting_tab: 1
     }, options );
-    var $content = $('.' + settings.content_class);
-    var $list = $('.' + settings.list_class);
-    $content.find('div').hide();
-    $content.find("div:nth-child(" + settings.starting_tab + ")").show();
-    $list.find("li:nth-child(" + settings.starting_tab + ")").addClass(settings.active_class);
 
-    $("." + settings.list_class + ' li a').click(function(e){
-        $list.find("li").removeClass(settings.active_class);
-        $("." + settings.content_class + " > div").hide();
-        $(this).parent().addClass(settings.active_class);
-        var currentTab = $(this).attr('href');
-        $(currentTab).show();
-        e.preventDefault();
+    $("." + settings.list_class).each(function() {
+      $(this).children('li:nth-child(' + settings.starting_tab + ')' ).children('a').addClass(settings.active_class).next().addClass(settings.open_class).show();
+    });    
+    $("." + settings.list_class).on('click', 'li > a.c-tabs__link', function(event) {
+      if (!$(this).hasClass(settings.active_class)) {
+        event.preventDefault();
+        var tabs = $(this).closest("." + settings.list_class);
+        tabs.find("." + settings.open_class).removeClass(settings.open_class).hide();
+
+        $(this).next().toggleClass(settings.open_class).toggle();
+        tabs.find("." + settings.active_class).removeClass(settings.active_class);
+        $(this).addClass(settings.active_class);
+      } else {
+        event.preventDefault();
+      }
     });
   };
 }( jQuery ));
