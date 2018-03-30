@@ -1,0 +1,9 @@
+{
+  "name": "basictabs",
+  "version": "1.0.0",
+  "description": "BasicTabs script",
+  "main": "js/basicTabs.js",
+  "repository": "git@github.com:jsheffers/BasicTabs.git",
+  "author": "Shane Jeffers <jsheffers@gmail.com>",
+  "license": "MIT"
+}
